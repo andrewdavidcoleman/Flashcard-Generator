@@ -1,3 +1,4 @@
+var inquirer = require("inquirer");
 var fs = require("fs");
 var BasicCard = require("./BasicCard.js");
 
@@ -6,6 +7,17 @@ function ClozeCard(text, cloze) {
   this.partial = text;
   this.fullText = cloze + text;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 var firstPresidentCloze = new ClozeCard("...was the first president of the United States.", "George Washington");
@@ -32,18 +44,12 @@ if (process.argv[2] === "cloze") {
 
 
 
+
+
+
+
+
+
 var brokenCloze = new ClozeCard("This doesn't work", "oops"); // "Should throw or log an error because "oops" doesn't appear in "This doesn't work"
-
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports = ClozeCard;
