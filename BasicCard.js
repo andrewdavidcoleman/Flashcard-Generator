@@ -32,10 +32,6 @@ if (process.argv[2] === "study") {
         }
       });
 
-      // console.log(randomCard.front);
-      // function revealBack(){console.log(randomCard.back)};
-      // setTimeout(revealBack, 5000);
-
     });
   }
 
