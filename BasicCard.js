@@ -16,14 +16,13 @@ if (process.argv[2] === "study") {
       }
 
       var dataObj = JSON.parse(data);
-
       var random = Math.floor(Math.random() * dataObj.cards.length);
-
       var randomCard = new BasicCard(dataObj.cards[random].front, dataObj.cards[random].back);
 
       console.log(randomCard.front);
-      console.log(randomCard.back);
-      
+      function revealBack(){console.log(randomCard.back)};
+      setTimeout(revealBack, 5000);
+
     });
   }
 
