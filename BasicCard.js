@@ -1,5 +1,6 @@
 var inquirer = require("inquirer");
 var fs = require("fs");
+var prompt = require('prompt');
 
 function BasicCard(front, back) {
   this.front = front;
@@ -19,9 +20,21 @@ if (process.argv[2] === "study") {
       var random = Math.floor(Math.random() * dataObj.cards.length);
       var randomCard = new BasicCard(dataObj.cards[random].front, dataObj.cards[random].back);
 
-      console.log(randomCard.front);
-      function revealBack(){console.log(randomCard.back)};
-      setTimeout(revealBack, 5000);
+      // prompt the user with a random card front and compare their answer to the back
+      prompt.start();
+      var question = randomCard.front
+      var answer = randomCard.back
+      prompt.get(question, function (err, result) {
+        if (result.question === answer) {
+          console.log("That's right!")
+        } else {
+          console.log("Nope. Correct answer: " + answer)
+        }
+      });
+
+      // console.log(randomCard.front);
+      // function revealBack(){console.log(randomCard.back)};
+      // setTimeout(revealBack, 5000);
 
     });
   }
