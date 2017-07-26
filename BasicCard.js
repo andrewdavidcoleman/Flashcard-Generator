@@ -24,8 +24,10 @@ if (process.argv[2] === "study") {
       prompt.start();
       var question = randomCard.front
       var answer = randomCard.back
-      prompt.get(question, function (err, result) {
-        if (result.question === answer) {
+      console.log(question);
+      prompt.get('answer', function (err, result) {
+        console.log(result.answer);
+        if (result.answer === answer) {
           console.log("That's right!")
         } else {
           console.log("Nope. Correct answer: " + answer)

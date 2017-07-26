@@ -1,0 +1,24 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "Helpful study app for students",
+  "main": "BasicCard.js",
+  "dependencies": {
+    "inquirer": "^3.2.1",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node BasicCard.js study"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewdavidcoleman/Flashcard-Generator.git"
+  },
+  "author": "Andrew Coleman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewdavidcoleman/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/andrewdavidcoleman/Flashcard-Generator#readme"
+}
