@@ -1,4 +1,4 @@
-#Flashcard Generator
+# Flashcard Generator
 * Flashcard Generator is a command line node application and study tool that allows users to add questions and their corresponding answers, then randomly generate a question from the deck and prompt the user for an answer.
 
 * To add a new question:
